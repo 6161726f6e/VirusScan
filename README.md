@@ -14,6 +14,7 @@
 
 # GET HELP
 ╰─⠠⠵ ./vScan.sh -h
+
 This script will scan individual files or full directories for viruses w/ VirusTotal
 
 Usage : ./vScan.sh [OPTION] {DATA}
@@ -25,6 +26,7 @@ Usage : ./vScan.sh [OPTION] {DATA}
 
 # SCAN SINGLE FILE
 ╰─⠠⠵ ./vScan.sh -f ~/Downloads/eicar_com.zip
+
 processing /home/usera/Downloads/eicar_com.zip
 url = https://www.virustotal.com/api/v3/files/2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad
 sha = 2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad
@@ -36,6 +38,7 @@ sha = 2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad
 
 # SCAN FULL DIRECTORY
 ╰─⠠⠵ ./vScan.sh -d ~/Downloads/testDir 
+
 processing /home/usera/Downloads/testDir/eicar_com.zip
 url = https://www.virustotal.com/api/v3/files/2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad
 sha = 2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad
