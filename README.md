@@ -18,12 +18,15 @@
 This script will scan individual files or full directories for viruses w/ VirusTotal
 
 Usage : ./vScan.sh [OPTION] {DATA}
+
   Options:
+  
      -f [file]        Single file scan
+     
      -d [directory]   Full directory scan
+     
      -h               Help
-
-
+     
 # SCAN SINGLE FILE
 ╰─⠠⠵ ./vScan.sh -f ~/Downloads/eicar_com.zip
 
