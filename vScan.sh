@@ -13,7 +13,7 @@ export apikey=$(cat .apikey)
 help(){
   echo "This script will scan individual files or full directories for viruses w/ VirusTotal"
   echo
-  echo "Usage : ./${0##*/} [OPTION] {COMMAND}"
+  echo "Usage : ./${0##*/} [OPTION] {DATA}"
   echo "  Options:"
   echo "     -f [file]        Single file scan"
   echo "     -d [directory]   Full directory scan"
@@ -29,8 +29,10 @@ vScan(){
   url="https://www.virustotal.com/api/v3/files/${sha}"
   echo "url = $url"
   echo "sha = $sha"
-  result="$(curl -s --connect-timeout 3 --retry 1 -H "X-Apikey: ${apikey}" $url | grep -i 'malicious\|suspicious')"
+  result="$(curl -s --connect-timeout 3 --retry 1 -H "X-Apikey: ${apikey}" $url | grep -i 'score')"
+  #result="$(curl -s --connect-timeout 3 --retry 1 -H "X-Apikey: ${apikey}" $url)"
   echo -e "\n$result\n-------------------------"
+  sleep 15
 } 
 
 
