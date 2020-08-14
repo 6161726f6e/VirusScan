@@ -1,16 +1,16 @@
 # VirusScan your files with the VirusTotal API
-#
-# This script will scan a single file or full directories for known viruses, using the VirusTotal Service API.
-# The script assumes you are using a Free/Public API key, and hence throttles requests to 4/minute.  If you have
-#   a paid key, you can remove the sleep.
-#
-# REQUIREMENTS: API Key in .apikey file
-#
-# OUTPUT: Will print to screen info about current file being processed.
-#   If malicious content is found, will print a Result and Verdict for each file 
+
+ This script will scan a single file or full directories for known viruses, using the VirusTotal Service API.
+ The script assumes you are using a Free/Public API key, and hence throttles requests to 4/minute.  If you have
+   a paid key, you can remove the sleep.
+
+ REQUIREMENTS: API Key in .apikey file
+
+ OUTPUT: Will print to screen info about current file being processed.
+   If malicious content is found, will print a Result and Verdict for each file 
 
 
-# ############### RUNNING THE SCRIPT: #############################################
+# ############### RUNNING THE SCRIPT: 
 
 # GET HELP
 ╰─⠠⠵ ./vScan.sh -h
@@ -49,5 +49,4 @@ sha = 0c15e883dee85bb2f3540a47ec58f617a2547117f9096417ba5422268029f501
 
 
 -------------------------
-# #################################################################################
 
