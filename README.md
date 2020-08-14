@@ -10,7 +10,7 @@
    If malicious content is found, will print a Result and Verdict for each file 
 
 
-# ### RUNNING THE SCRIPT: ###
+# RUNNING THE SCRIPT:
 
 # GET HELP
 ╰─⠠⠵ ./vScan.sh -h
