@@ -31,6 +31,7 @@ Usage : ./vScan.sh [OPTION] {DATA}
 ╰─⠠⠵ ./vScan.sh -f ~/Downloads/eicar_com.zip
 
 processing /home/usera/Downloads/eicar_com.zip
+SHA256 = 2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad
 
                     "result": "Malicious (score: 85)"
                     "result": "malware (ai score=100)"
@@ -38,8 +39,7 @@ processing /home/usera/Downloads/eicar_com.zip
 ```
 ** SCAN FULL DIRECTORY **
 ```
-╰─⠠⠵ ./vScan.sh -d ~/Downloads/testDir 
-
+╰─⠠⠵ virusscan -d ~/Downloads/testDir/             
 processing /home/usera/Downloads/testDir/eicar_com.zip
 SHA256 = 2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad
 
@@ -47,7 +47,9 @@ SHA256 = 2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad
                     "result": "malware (ai score=100)"
 -------------------------
 processing /home/usera/Downloads/testDir/garbage.txt
+SHA256 = 0c15e883dee85bb2f3540a47ec58f617a2547117f9096417ba5422268029f501
 
 
 -------------------------
+
 ```
