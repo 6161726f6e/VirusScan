@@ -12,7 +12,8 @@
 
 # RUNNING THE SCRIPT:
 
-# GET HELP
+** GET HELP **
+```
 ╰─⠠⠵ ./vScan.sh -h
 
 This script will scan individual files or full directories for viruses w/ VirusTotal
@@ -22,12 +23,11 @@ Usage : ./vScan.sh [OPTION] {DATA}
   Options:
   
      -f [file]        Single file scan
-     
      -d [directory]   Full directory scan
-     
      -h               Help
-     
-# SCAN SINGLE FILE
+```
+** SCAN SINGLE FILE **
+```
 ╰─⠠⠵ ./vScan.sh -f ~/Downloads/eicar_com.zip
 
 processing /home/usera/Downloads/eicar_com.zip
@@ -35,12 +35,13 @@ processing /home/usera/Downloads/eicar_com.zip
                     "result": "Malicious (score: 85)"
                     "result": "malware (ai score=100)"
 -------------------------
-
-
-# SCAN FULL DIRECTORY
+```
+** SCAN FULL DIRECTORY **
+```
 ╰─⠠⠵ ./vScan.sh -d ~/Downloads/testDir 
 
 processing /home/usera/Downloads/testDir/eicar_com.zip
+SHA256 = 2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad
 
                     "result": "Malicious (score: 85)"
                     "result": "malware (ai score=100)"
@@ -49,4 +50,4 @@ processing /home/usera/Downloads/testDir/garbage.txt
 
 
 -------------------------
-
+```
