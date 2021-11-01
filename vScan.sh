@@ -6,9 +6,10 @@
 # TO DO: Process JSON return, instead of using simple grep
 # 
 # Author: Aaron Dhiman
-# Date: 8/13/2020
+# Date: 11/1/2021
+# Ver: 0.11
 
-export apikey=$(cat .apikey)
+export apikey=$(cat ./.apikey)
 
 help(){
   echo "This script will scan individual files or full directories for viruses w/ VirusTotal"
@@ -30,7 +31,7 @@ vScan(){
   url="https://www.virustotal.com/api/v3/files/${sha}"
   #echo "url = $url"
   #echo "sha = $sha"
-  result="$(curl -s --connect-timeout 3 --retry 1 -H "X-Apikey: ${apikey}" $url | grep -i 'score')"
+  result="$(curl -s --connect-timeout 3 --retry 1 -H "X-Apikey: ${apikey}" $url | grep -i 'score\|harmless\|type-unsupported\|suspicious\|timeout\|failure\|malicious\|undetected')"
   #result="$(curl -s --connect-timeout 3 --retry 1 -H "X-Apikey: ${apikey}" $url)"
   echo -e "\n$result\n-------------------------"
   sleep 15
