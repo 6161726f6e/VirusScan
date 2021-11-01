@@ -31,7 +31,7 @@ vScan(){
   url="https://www.virustotal.com/api/v3/files/${sha}"
   #echo "url = $url"
   #echo "sha = $sha"
-  result="$(curl -s --connect-timeout 3 --retry 1 -H "X-Apikey: ${apikey}" $url | grep -i 'score\|harmless\|type-unsupported\|suspicious\|timeout\|failure\|malicious\|undetected')"
+  result="$(curl -s --connect-timeout 3 --retry 1 -H "X-Apikey: ${apikey}" $url | grep -i 'score\|harmless\|type-unsupported\|suspicious\|timeout\|failure\|malicious\|undetected' | grep -iv category)"
   #result="$(curl -s --connect-timeout 3 --retry 1 -H "X-Apikey: ${apikey}" $url)"
   echo -e "\n$result\n-------------------------"
   sleep 15
